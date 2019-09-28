@@ -30,6 +30,11 @@ namespace API
         {
             _connectionString = Configuration["secretConnectionString"];
 
+            services.AddCors(opt =>
+            {
+                opt.AddPolicy("CorsPolicy", c => c.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
+            });
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddEntityFrameworkNpgsql().AddDbContext<ApiContext>(opt => opt.UseNpgsql(_connectionString));
             services.AddTransient<DataSeed>();
@@ -41,6 +46,7 @@ namespace API
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseCors("CorsPolicy");
             }
             else
             {
