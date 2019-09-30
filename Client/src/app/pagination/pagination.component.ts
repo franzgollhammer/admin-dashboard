@@ -13,6 +13,7 @@ export class PaginationComponent implements OnInit {
   @Input() loading: boolean;
 
   @Output() goPrev = new EventEmitter<boolean>();
+  @Output() goNext = new EventEmitter<boolean>();
 
   constructor() {}
 
@@ -20,5 +21,8 @@ export class PaginationComponent implements OnInit {
 
   onPrev(): void {
     this.goPrev.emit(true);
+  }
+  onNext(): void {
+    this.goNext.emit(true);
   }
 }

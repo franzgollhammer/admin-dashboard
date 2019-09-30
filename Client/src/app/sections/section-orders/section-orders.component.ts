@@ -90,4 +90,7 @@ export class SectionOrdersComponent implements OnInit {
   goToPrevious(): void {
     console.log("Previous page");
   }
+  goToNext(): void {
+    console.log("Next page");
+  }
 }
