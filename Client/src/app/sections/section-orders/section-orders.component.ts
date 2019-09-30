@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Order } from "../../models/order";
 import { SalesDataService } from "src/app/services/sales-data.service";
+import { THIS_EXPR } from "@angular/compiler/src/output/output_ast";
 
 @Component({
   selector: "app-section-orders",
@@ -88,9 +89,17 @@ export class SectionOrdersComponent implements OnInit {
   }
 
   goToPrevious(): void {
-    console.log("Previous page");
+    // console.log("Previous page");
+    this.page--;
+    this.getOrders();
   }
   goToNext(): void {
-    console.log("Next page");
+    // console.log("Next page");
+    this.page++;
+    this.getOrders();
+  }
+  goToPage(n: number): void {
+    this.page = n;
+    this.getOrders();
   }
 }

@@ -1,6 +1,12 @@
-<div>
+<div class="pages">
+  <span class="page-counts">X through Y of Z orders</span>
+  <span class="page-totals">{{ totalPages() }}</span>
   <button class="btn btn-small btn-info" (click)="onPrev()">
     Previous Page
   </button>
+  <b>...</b>
   <button class="btn btn-small btn-info" (click)="onNext()">Next Page</button>
+  <button class="btn btn-small btn-info" (click)="onPage()">
+    Go To Page
+  </button>
 </div>
