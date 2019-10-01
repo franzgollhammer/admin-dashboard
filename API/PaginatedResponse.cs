@@ -8,7 +8,7 @@ namespace API
         public PaginatedResponse(IEnumerable<T> data, int i, int len)
         {
             Data = data.Skip((i - 1) * len).Take(len).ToList();
-            Total = Data.Count();
+            Total = data.Count();
         }
 
         public int Total { get; set; }
