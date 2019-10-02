@@ -30,12 +30,10 @@ export class SectionOrdersComponent implements OnInit {
   }
 
   goToPrevious(): void {
-    // console.log("Previous page");
     this.page--;
     this.getOrders();
   }
   goToNext(): void {
-    // console.log("Next page");
     this.page++;
     this.getOrders();
   }
