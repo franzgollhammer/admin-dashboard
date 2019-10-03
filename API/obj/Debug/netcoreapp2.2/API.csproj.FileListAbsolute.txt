@@ -1,5 +1,4 @@
 /Users/franklin/Code/web/angular/angular-core/angular-core-chart/API/obj/Debug/netcoreapp2.2/API.csprojAssemblyReference.cache
-/Users/franklin/Code/web/angular/angular-core/angular-core-chart/API/obj/Debug/netcoreapp2.2/API.csproj.CoreCompileInputs.cache
 /Users/franklin/Code/web/angular/angular-core/angular-core-chart/API/obj/Debug/netcoreapp2.2/API.RazorAssemblyInfo.cache
 /Users/franklin/Code/web/angular/angular-core/angular-core-chart/API/obj/Debug/netcoreapp2.2/API.RazorAssemblyInfo.cs
 /Users/franklin/Code/web/angular/angular-core/angular-core-chart/API/obj/Debug/netcoreapp2.2/API.AssemblyInfoInputs.cache
@@ -12,3 +11,6 @@
 /Users/franklin/Code/web/angular/angular-core/angular-core-chart/API/obj/Debug/netcoreapp2.2/API.RazorTargetAssemblyInfo.cache
 /Users/franklin/Code/web/angular/angular-core/angular-core-chart/API/obj/Debug/netcoreapp2.2/API.dll
 /Users/franklin/Code/web/angular/angular-core/angular-core-chart/API/obj/Debug/netcoreapp2.2/API.pdb
+/Users/franklin/Code/web/angular/angular-core/angular-core-chart/API/bin/Debug/netcoreapp2.2/appsettings.Development.json
+/Users/franklin/Code/web/angular/angular-core/angular-core-chart/API/bin/Debug/netcoreapp2.2/appsettings.json
+/Users/franklin/Code/web/angular/angular-core/angular-core-chart/API/bin/Debug/netcoreapp2.2/Properties/launchSettings.json
