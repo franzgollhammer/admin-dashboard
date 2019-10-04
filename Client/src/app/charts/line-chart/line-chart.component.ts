@@ -47,6 +47,7 @@ export class LineChartComponent implements OnInit {
         dates = [].concat.apply([], dates);
 
         const r = this.getCustomerOrdersByDate(allChartData, dates)["data"];
+        console.log(r);
         this.lineChartLabels = r[0]["orders"].map(o => o["date"]);
         this.lineChartData = [
           { "data": r[0].orders.map(x => x.total), "label": r[0]["customer"]},
@@ -77,7 +78,7 @@ export class LineChartComponent implements OnInit {
     customers.reduce((x, y, i) => {
       const customerOrders = [];
       dataSets[i] = {
-        costomer: y, 
+        customer: y, 
         orders: u.reduce((r, e, j) => {
           const obj = {};
           obj["date"] = e;
